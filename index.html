@@ -109,7 +109,26 @@
 		          <li><a href="#buttons_draw" id="top_draw"><div id="cast_tab_draw"></div><div id="cast_tab_draw_selected"></div></a></li>
 		          <li><a href="#buttons_type" id="top_type"><div id="cast_tab_type"></div><div id="cast_tab_type_selected"></div></a></li> 
 		          <li><a href="#buttons_edit" id="top_edit"><div id="cast_tab_edit"></div><div id="cast_tab_edit_selected"></div></a></li>
-		          <li class="last-tab"><a href="#buttons_zoom" id="top_zoom"><div id="cast_tab_zoom"></div></a></li>
+		  	  <li class="last-tab">	
+					<div id="zoom_dropdown" class="dropdown">
+						<!-- Zoom buttons -->
+						<input id="zoom" size="3" value="100" type="text" />
+						<button></button>
+						<ul>
+								<li>1000%</li>
+								<li>400%</li>
+								<li>200%</li>
+								<li>100%</li>
+								<li>50%</li>
+								<li>25%</li>
+								<li id="fit_to_canvas" data-val="canvas">Fit to canvas</li>
+								<li id="fit_to_layer_content" data-val="layer">Fit to layer content</li>
+								<li id="fit_to_all" data-val="content">Fit to all content</li>
+								<li>100%</li>
+						</ul>
+					</div>
+					<a href="#buttons_zoom"></a>
+				</li>
 		        </ul>
 		        <div id="buttons_starters">
 					<!-- Drawing Starters added here via extension -->
@@ -131,26 +150,6 @@
 		          	<div class="tool_button" id="tool_select" title="Select Tool [1]"></div>
 		        </div>
 		        <div id="buttons_zoom">
-					<div class="tool_button" id="tool_zoom" title="Zoom Tool [Ctrl+Up/Down]"></div>
-						<!-- Zoom buttons -->
-					<div id="zoom_panel" class="toolset" title="Change zoom level">
-						<input id="zoom" size="3" value="100" type="text" />
-						<div id="zoom_dropdown" class="dropdown">
-							<button></button>
-							<ul>
-								<li>1000%</li>
-								<li>400%</li>
-								<li>200%</li>
-								<li>100%</li>
-								<li>50%</li>
-								<li>25%</li>
-								<li id="fit_to_canvas" data-val="canvas">Fit to canvas</li>
-								<li id="fit_to_layer_content" data-val="layer">Fit to layer content</li>
-								<li id="fit_to_all" data-val="content">Fit to all content</li>
-								<li>100%</li>
-							</ul>
-						</div>
-					</div>
 		        </div>
 		        <div id="stroke_fill">
 		        	<div class="tool_sep"></div>
